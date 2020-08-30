@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 @Slf4j
@@ -56,4 +57,5 @@ public class PaymentController {
     public String getPaymentLB() {
         return serverPort;
     }
+
 }

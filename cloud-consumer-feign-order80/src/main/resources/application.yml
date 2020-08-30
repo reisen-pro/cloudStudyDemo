@@ -1,0 +1,15 @@
+server:
+  port: 80
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+    eureka-server-connect-timeout-seconds: 5
+
+ribbon:
+  #建立连接超时时间
+  ConnectTimeout: 5000
+  #建立连接之后，读取响应资源超时时间
+  ReadTimeout: 5000
