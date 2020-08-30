@@ -1,0 +1,39 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: cloud-provider-hystrix-payment
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/clouddemo?&useSSL=false
+      username: root
+      password: 123456
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      # 集群版
+      #defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+      # 单机版
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    #命名
+    instance-id: payment8001
+    #显示ip
+    prefer-ip-address: true
+    # Eureka客户端向服务端发送心跳的时间间隔，单位是秒（默认30秒）
+    lease-renewal-interval-in-seconds: 1
+    # Eureka服务端在收到最后一次心跳后等待时间上限，单位为秒（默认是90秒），超时将剔除服务
+    lease-expiration-duration-in-seconds: 2
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.project.cloud.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

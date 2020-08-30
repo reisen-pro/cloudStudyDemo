@@ -8,8 +8,9 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      #defaultZone: http://eureka7001.com:7001/eureka/ 改单机就是指向自己
-      defaultZone: http://eureka7002.com:7002/eureka/
+      #改单机就是指向自己
+      defaultZone: http://eureka7001.com:7001/eureka/
+      #defaultZone: http://eureka7002.com:7002/eureka/
   server:
     #多久一次心跳
     eviction-interval-timer-in-ms: 2000

@@ -13,3 +13,7 @@ ribbon:
   ConnectTimeout: 5000
   #建立连接之后，读取响应资源超时时间
   ReadTimeout: 5000
+
+logging:
+  level:
+    com.project.cloud.service.PaymentFeignService: debug
