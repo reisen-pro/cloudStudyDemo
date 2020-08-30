@@ -51,4 +51,9 @@ public class PaymentController {
     public CommonResult doException(NumberFormatException e) {
         return new CommonResult(500, "数字转换异常");
     }
+
+    @GetMapping(value = "/payment/lb")
+    public String getPaymentLB() {
+        return serverPort;
+    }
 }

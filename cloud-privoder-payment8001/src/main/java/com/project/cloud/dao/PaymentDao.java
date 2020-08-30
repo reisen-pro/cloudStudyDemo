@@ -11,6 +11,7 @@ import org.apache.ibatis.annotations.Param;
 public interface PaymentDao {
     /**
      * create new
+     *
      * @param payment object
      * @return result flag
      */
@@ -18,6 +19,7 @@ public interface PaymentDao {
 
     /**
      * query payment by id
+     *
      * @param id key
      * @return payment if not null
      */

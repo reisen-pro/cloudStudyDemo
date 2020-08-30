@@ -22,6 +22,7 @@
         <module name="cloud-consumer-order80" />
         <module name="cloud-privoder-payment8002" />
         <module name="cloud-privoder-payment8001" />
+        <module name="cloud-consumer-feign-order80" />
         <module name="cloud-providerconsul-payment8006" />
         <module name="cloud-api-commons" />
       </profile>
@@ -29,6 +30,7 @@
     <bytecodeTargetLevel>
       <module name="cloud" target="1.8" />
       <module name="cloud-api-commons" target="1.8" />
+      <module name="cloud-consumer-feign-order80" target="1.8" />
       <module name="cloud-consumer-order80" target="1.8" />
       <module name="cloud-consumerconsul-order80" target="1.8" />
       <module name="cloud-consumerzk-order80" target="1.8" />
@@ -41,9 +43,11 @@
     </bytecodeTargetLevel>
   </component>
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-api-commons" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-api-commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-api-commons/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-consumer-feign-order80/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-consumer-feign-order80/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-consumer-order80" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-consumer-order80/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-consumer-order80/src/main/resources" charset="UTF-8" />
@@ -154,6 +158,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/cloud.iml" filepath="$PROJECT_DIR$/cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-api-commons/cloud-api-commons.iml" filepath="$PROJECT_DIR$/cloud-api-commons/cloud-api-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-consumer-feign-order80/cloud-consumer-feign-order80.iml" filepath="$PROJECT_DIR$/cloud-consumer-feign-order80/cloud-consumer-feign-order80.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-consumer-order80/cloud-consumer-order80.iml" filepath="$PROJECT_DIR$/cloud-consumer-order80/cloud-consumer-order80.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-consumerconsul-order80/cloud-consumerconsul-order80.iml" filepath="$PROJECT_DIR$/cloud-consumerconsul-order80/cloud-consumerconsul-order80.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-consumerzk-order80/cloud-consumerzk-order80.iml" filepath="$PROJECT_DIR$/cloud-consumerzk-order80/cloud-consumerzk-order80.iml" />

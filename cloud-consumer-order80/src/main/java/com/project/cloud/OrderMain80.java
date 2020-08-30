@@ -12,12 +12,12 @@ import org.springframework.cloud.netflix.ribbon.RibbonClient;
  * @projectName cloud
  * @description: TODO
  * @date 2020/6/19 0:08
+ * 开启自定义的负载策略 @RibbonClient(name = "CLOUD-PAYMENT-SERVICE",configuration = MySelfRule.class)
  */
 @SpringBootApplication
 @EnableEurekaClient
-@RibbonClient(name = "CLOUD-PAYMENT-SERVICE",configuration = MySelfRule.class)
 public class OrderMain80 {
     public static void main(String[] args) {
-        SpringApplication.run(OrderMain80.class,args);
+        SpringApplication.run(OrderMain80.class, args);
     }
 }
