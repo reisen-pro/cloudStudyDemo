@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
  * @author Reisen
  */
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 public class CommonResult<T> {
     private Integer code;
@@ -18,6 +18,8 @@ public class CommonResult<T> {
     private T data;
 
     public CommonResult(Integer code, String message) {
-        this(code, message, null);
+        this.code = code;
+        this.message = message;
+        this.data = null;
     }
 }
