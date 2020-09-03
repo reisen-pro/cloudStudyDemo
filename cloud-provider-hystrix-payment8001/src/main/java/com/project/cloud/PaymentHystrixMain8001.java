@@ -8,6 +8,8 @@ import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 
+import java.util.function.Predicate;
+
 /**
  * @author Reisen
  * @title: PaymentHystrixMain8001
