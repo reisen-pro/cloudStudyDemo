@@ -9,8 +9,8 @@ eureka:
     fetch-registry: false
     service-url:
       #改单机就是指向自己
-      defaultZone: http://eureka7001.com:7001/eureka/
-      #defaultZone: http://eureka7002.com:7002/eureka/
+      #defaultZone: http://eureka7001.com:7001/eureka/
+      defaultZone: http://eureka7002.com:7002/eureka/
   server:
     #多久一次心跳
     eviction-interval-timer-in-ms: 2000
