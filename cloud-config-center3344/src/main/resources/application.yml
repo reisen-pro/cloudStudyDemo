@@ -7,7 +7,9 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:reisen-pro/springcloud-config #github上面的git仓库名字
+          uri: https://github.com/reisen-pro/springcloud-config #github上面的git仓库名字
+          #uri: git@github.com:reisen-pro/springcloud-config.git   #ssh地址启动会报错，reject HostKey: github.com，所以使用https即可
+
           ####搜索目录
           search-paths:
             - springcloud-config
