@@ -30,7 +30,7 @@
             <!--服务器的zookeeper版本比默认的高时，去除，然后单独引。-->
             <groupId>org.apache.zookeeper</groupId>
             <artifactId>zookeeper</artifactId>
-            <version>3.4.13</version>
+            <version>3.4.14</version>
             <exclusions>
                 <exclusion>
                     <!--去除jar包冲突-->
