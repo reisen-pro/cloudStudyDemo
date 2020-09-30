@@ -6,9 +6,9 @@ spring:
     name: cloud-payment-order
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: org.gjt.mm.mysql.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     druid:
-      url: jdbc:mysql://140.143.186.166:3306/clouddemo?&useSSL=false
+      url: jdbc:mysql://127.0.0.1:3306/clouddemo?&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
       username: root
       password: 123456
   cloud:
