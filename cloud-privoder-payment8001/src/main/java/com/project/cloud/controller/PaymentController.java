@@ -20,8 +20,6 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 public class PaymentController {
 
-    public static void main(String[] args) {
-    }
 
     @Resource
     private PaymentService paymentService;
@@ -92,5 +90,10 @@ public class PaymentController {
             e.printStackTrace();
         }
         return serverPort;
+    }
+
+    @GetMapping(value = "/payment/zipkin")
+    public String getPaymentZipKin() {
+        return "hi, i'am paymentzipkin server fall back, welcome O(∩_∩)O哈哈~";
     }
 }

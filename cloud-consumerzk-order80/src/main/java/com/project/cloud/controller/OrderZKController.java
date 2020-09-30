@@ -35,7 +35,4 @@ public class OrderZKController {
         return result;
     }
 
-    public static void main(String[] args) {
-        HashMap map = new HashMap(11,0.75F);
-    }
 }
